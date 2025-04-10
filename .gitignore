@@ -1,0 +1,29 @@
+# Xcode
+DerivedData/
+*.xcworkspace
+*.xcuserdata
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+
+# Breakpoints
+*.xcbkptlist
+
+# SwiftPM
+.build/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/
+
+# Swift Package Manager
+Package.resolved
+.packages/
+
+# Misc
+*.DS_Store
+*.env
