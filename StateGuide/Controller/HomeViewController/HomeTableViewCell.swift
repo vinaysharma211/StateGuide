@@ -12,6 +12,7 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet weak var stateName: UILabel!
     @IBOutlet weak var capitalName: UILabel!
     @IBOutlet weak var emblemImg: UIImageView!
+    @IBOutlet weak var favButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

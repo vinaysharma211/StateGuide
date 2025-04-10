@@ -1,6 +1,0 @@
-framework module Pods_StateGuide {
-  umbrella header "Pods-StateGuide-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -19,6 +19,9 @@
 		183D15992B8A523300772E04 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D15982B8A523300772E04 /* State.swift */; };
 		183D159B2B8A524700772E04 /* UnionTerritory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183D159A2B8A524700772E04 /* UnionTerritory.swift */; };
 		187C0A162B8A6B2900273041 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C0A152B8A6B2900273041 /* MenuViewController.swift */; };
+		187C76C92B94567100075DB6 /* FavouriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C76C82B94567100075DB6 /* FavouriteViewController.swift */; };
+		187C76CE2B945CFA00075DB6 /* FavouriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C76CD2B945CFA00075DB6 /* FavouriteTableViewCell.swift */; };
+		1889640F2D74DF1600345988 /* StateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1889640E2D74DF1600345988 /* StateService.swift */; };
 		321DDB10AD9ECBF003FE7E19 /* Pods_StateGuide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40143D09050D784591563025 /* Pods_StateGuide.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +40,9 @@
 		183D15982B8A523300772E04 /* State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 		183D159A2B8A524700772E04 /* UnionTerritory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnionTerritory.swift; sourceTree = "<group>"; };
 		187C0A152B8A6B2900273041 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		187C76C82B94567100075DB6 /* FavouriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteViewController.swift; sourceTree = "<group>"; };
+		187C76CD2B945CFA00075DB6 /* FavouriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteTableViewCell.swift; sourceTree = "<group>"; };
+		1889640E2D74DF1600345988 /* StateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateService.swift; sourceTree = "<group>"; };
 		40143D09050D784591563025 /* Pods_StateGuide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StateGuide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4068D033AAE2A8880C37C4F /* Pods-StateGuide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateGuide.debug.xcconfig"; path = "Target Support Files/Pods-StateGuide/Pods-StateGuide.debug.xcconfig"; sourceTree = "<group>"; };
 		EDDD4883E0527CA2827CD3EB /* Pods-StateGuide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StateGuide.release.xcconfig"; path = "Target Support Files/Pods-StateGuide/Pods-StateGuide.release.xcconfig"; sourceTree = "<group>"; };
@@ -54,13 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18278B862B8B128B00CC7DDA /* SideMenuVC */ = {
+		18278B862B8B128B00CC7DDA /* SideMenuViewController */ = {
 			isa = PBXGroup;
 			children = (
 				18278B872B8B12B100CC7DDA /* IndiaMapViewController.swift */,
 				18278B8B2B8B8DDB00CC7DDA /* RateThisAppViewController.swift */,
+				187C76C82B94567100075DB6 /* FavouriteViewController.swift */,
+				187C76CD2B945CFA00075DB6 /* FavouriteTableViewCell.swift */,
 			);
-			path = SideMenuVC;
+			path = SideMenuViewController;
 			sourceTree = "<group>";
 		};
 		183D15772B8A516C00772E04 = {
@@ -84,16 +92,13 @@
 		183D15822B8A516D00772E04 /* StateGuide */ = {
 			isa = PBXGroup;
 			children = (
-				18278B862B8B128B00CC7DDA /* SideMenuVC */,
+				1889640D2D74DEC500345988 /* NetworkManager */,
+				1889640C2D74CD7600345988 /* Controller */,
 				183D15972B8A521000772E04 /* Model */,
+				187C76C72B944DA900075DB6 /* View */,
+				183D158C2B8A516E00772E04 /* Assets.xcassets */,
 				183D15852B8A516D00772E04 /* SceneDelegate.swift */,
 				183D15832B8A516D00772E04 /* AppDelegate.swift */,
-				187C0A152B8A6B2900273041 /* MenuViewController.swift */,
-				183D15872B8A516D00772E04 /* HomeViewController.swift */,
-				18278B892B8B770000CC7DDA /* HomeTableViewCell.swift */,
-				183D15892B8A516D00772E04 /* Main.storyboard */,
-				183D158C2B8A516E00772E04 /* Assets.xcassets */,
-				183D158E2B8A516E00772E04 /* LaunchScreen.storyboard */,
 				183D15912B8A516E00772E04 /* Info.plist */,
 			);
 			path = StateGuide;
@@ -106,6 +111,50 @@
 				183D159A2B8A524700772E04 /* UnionTerritory.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		187C76C52B944D7300075DB6 /* MenuViewController */ = {
+			isa = PBXGroup;
+			children = (
+				187C0A152B8A6B2900273041 /* MenuViewController.swift */,
+			);
+			path = MenuViewController;
+			sourceTree = "<group>";
+		};
+		187C76C62B944D8600075DB6 /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				183D15872B8A516D00772E04 /* HomeViewController.swift */,
+				18278B892B8B770000CC7DDA /* HomeTableViewCell.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		187C76C72B944DA900075DB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				183D15892B8A516D00772E04 /* Main.storyboard */,
+				183D158E2B8A516E00772E04 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1889640C2D74CD7600345988 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18278B862B8B128B00CC7DDA /* SideMenuViewController */,
+				187C76C52B944D7300075DB6 /* MenuViewController */,
+				187C76C62B944D8600075DB6 /* HomeViewController */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1889640D2D74DEC500345988 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				1889640E2D74DF1600345988 /* StateService.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 		7BE9AC49DCF80C8CD254BE9D /* Frameworks */ = {
@@ -244,11 +293,14 @@
 				187C0A162B8A6B2900273041 /* MenuViewController.swift in Sources */,
 				183D15842B8A516D00772E04 /* AppDelegate.swift in Sources */,
 				18278B8C2B8B8DDB00CC7DDA /* RateThisAppViewController.swift in Sources */,
+				187C76CE2B945CFA00075DB6 /* FavouriteTableViewCell.swift in Sources */,
 				183D15862B8A516D00772E04 /* SceneDelegate.swift in Sources */,
 				183D15992B8A523300772E04 /* State.swift in Sources */,
 				183D159B2B8A524700772E04 /* UnionTerritory.swift in Sources */,
 				18278B8A2B8B770000CC7DDA /* HomeTableViewCell.swift in Sources */,
+				187C76C92B94567100075DB6 /* FavouriteViewController.swift in Sources */,
 				18278B882B8B12B100CC7DDA /* IndiaMapViewController.swift in Sources */,
+				1889640F2D74DF1600345988 /* StateService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

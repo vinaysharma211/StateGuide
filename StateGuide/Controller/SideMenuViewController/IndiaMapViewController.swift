@@ -11,7 +11,6 @@ class IndiaMapViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
 }

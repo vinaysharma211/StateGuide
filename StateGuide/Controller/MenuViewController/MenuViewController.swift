@@ -39,7 +39,8 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
                 navigateToMainPage()
             case 1: // India Map
                 navigateToIndiaMap()
-                break
+            case 2:
+                navigateToFavorite()
             // Add cases for other menu items as needed
             default:
                 break
@@ -60,5 +61,11 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
         let indiaMapViewController = storyboard.instantiateViewController(withIdentifier: "IndiaMapViewController")
         self.present(indiaMapViewController, animated: true)
      }
+    
+    func navigateToFavorite() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let indiaMapViewController = storyboard.instantiateViewController(withIdentifier: "FavouriteViewController")
+        self.present(indiaMapViewController, animated: true)
+    }
     
 }

@@ -44,4 +44,6 @@ let statesAndCapitals: [State] = [
     State(name: "West Bengal", capital: "Kolkata", imageName: "wb.png")
 ]
 
+var favStates: [State] = []
+
 
